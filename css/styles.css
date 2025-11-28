@@ -43,14 +43,24 @@ section .container {
     width: 100%;
 }
 
-section .color_generator_container {
+section #color_generator_container {
     display: flex;
     height: calc(100% - 60px);
     flex-direction: column;
 }
 
+#color_generator_container div {
+    cursor: pointer;
+}
+
+#color_generator_container div:hover {
+    opacity: 0.9;
+    transform: translate(40deg);
+}
+
+
 @media (min-width: 768px) {
-    section .color_generator_container {
+    section #color_generator_container {
         flex-direction: row;
     }
 }
@@ -62,7 +72,7 @@ section .color_generator_container {
     justify-content: center;
 }
 
-section .color_generator_container div {
+section #color_generator_container div {
     flex: 1;
     border: 1px solid white;
     color: white;
